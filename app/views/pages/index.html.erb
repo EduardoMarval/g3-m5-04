@@ -1,0 +1,26 @@
+<div class="container-fluid main-c ">
+    <h1 class="text-center">Harry Potter Characters</h1>
+    <div class="mt-5 py-5 row d-flex justify-content-center rounded">
+      <table class="table tabdiv text-white w-50">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Locación</th>
+            <th>House</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @characters.each do |character| %>
+          <tr>
+            <td><%= character.name %></td>
+            <td><%= character.location %></td>
+            <td><%= character.house %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  <footer class="footer">
+    <p>Powered by Marval ©2023</p>
+  </footer>
+</div>
